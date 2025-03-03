@@ -1,0 +1,441 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+
+/* NAVBAR */
+.nav-inicio{
+    position: fixed;
+    background: rgba(0, 0, 0, 0) ;
+    height: 80px;
+    width: 100%;
+}
+.nav-paginas{
+    background: rgb(0, 0, 0) ;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+
+img.logo{
+    width: 100px;
+    padding: 1px;
+    margin: 5px 0px 0px 100px;
+}
+.logo-paginas{
+    width: 80px;
+    padding: 1px;
+    margin: 0px 0px 0px 100px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    z-index: 3;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+
+a.active,a:hover{
+    background: #01020285;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+
+
+
+
+/* INICIO */    
+
+.contenedor-principal{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../img/fondo.jpg");
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 100vh;
+}
+.contenedor-titulo1{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-titulo1 h1{
+    font-size: 3rem;
+}
+
+/* paginas general */
+.contenedor-paginas{
+    background:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+/* pagina nosotros */
+.contenedor-trayectoria{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+section .container{
+    display: grid;
+    width: 100%;
+}
+.container .row{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.col .parrafo-trayectoria{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.col .titulo-trayectoria{
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+}
+.colborde{
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+.col .titulo-nosotros{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom:50px;
+    
+}
+.parrafo-nosotros{
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+    
+
+    
+}
+
+.container-nosotros{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .center{
+    align-items: center;
+}
+
+
+
+
+/* pagina proyectos */
+.section-proyectos{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contenedor-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contenedor-img img{
+    width: 10%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid rgba(34, 33, 33, 0.684);
+    transition: all ease-in-out 0.5s;
+}
+.contenedor-img img:hover{
+    width: 25%;
+
+}
+.titulo-proyectos h2{
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom:50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/* pagina servicios */
+.section-servicios{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+.section-servicios .card-contenedor{
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    
+}
+.titulo-servicios h2{
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom:50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+/* pagina contactos */
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1, .div2 {
+    position: absolute;
+    
+
+}
+.div1 {
+    background-color: rgb(109, 109, 109);
+    width: 400px;
+    height: 450px;
+    z-index: 1;
+    left: 250px;
+    top: 10px;
+    display: grid;
+    
+}
+.div1 .titulo-div1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.div1 i{
+    width: auto;
+    display: flex;
+    margin-left: 30px;
+
+}
+.div1 i a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.div1 img{
+    margin-left: 50px;
+}
+
+
+
+.div2 {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 450px;
+    z-index: 2;
+    left: 550px;
+    color: black;
+    padding: 20px;
+    
+}
+.btn {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #f1f1f1;
+    margin: 1rem auto;
+    padding: 0.7rem 2rem;
+    border-radius: 30em;
+    border-style: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: 1px 1px 12px #000000;
+  }
+  
+  .btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    transform: translateX(-101%);
+    transition: all .3s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover {
+    color: #fcfcfc;
+    transition: all .3s ease;
+  }
+  
+  .btn:hover::before {
+    transform: translateX(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+/* nav */
+    @media (max-width:952px){
+    
+        nav ul li a{
+            color: white;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            list-style: none;
+            text-decoration: none;
+    
+    
+        } 
+        .section-servicios .card-contenedor{
+            grid-template-columns: 1fr;
+
+
+
+    }
+}
+
+
+    @media (max-width:858px){
+        .checkbtn{
+            display: block;
+        }
+        img.logo{
+            width: 70px;   
+        }
+        header .nav-inicio{
+            background-color: rgb(0, 0, 0) ;
+        }
+    
+        ul{
+            position:fixed;
+            width: 100%;
+            height: 100vh;
+            background:black;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition:  all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a {
+            font-size: 20px;
+    
+        }
+        a:hover,a.active{
+            background:none;
+            color: rgb(49, 49, 49);
+        }
+        #checkbox:checked ~ ul{
+            left: 0;
+        }
+
+        /* media nosotros */
+        .container .row{
+            display: grid;
+            grid-template-columns: 1fr ;
+        
+        }
+        .colborde{
+            border-top: solid 2px white;
+            border-bottom: solid 2px white;
+            border-right: none;
+            border-left: none;
+        }
+
+        .section-servicios .card-contenedor{
+            grid-template-columns: 1fr;
+
+
+
+        }
+    }
+        
